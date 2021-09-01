@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book Archive </title>
+    <!-- Bootstrap style sheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="css/bookarchive.css">
+</head>
+<body>
+
+
+    <div class="container mt-5">
+        <h1 class="text-success text-center mb-3"> Book List </h1>
+        <!-- book search input & button start -->
+        <div class="input-group mb-3 w-50 mx-auto">
+            <!-- input -->
+            <input id="search_field" type="text" class="form-control" placeholder="Favourite Book" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <!-- button -->
+            <button onclick="SearchBook()" class="btn btn-outline-primary" type="button" id="button_search">Search</button>
+        </div>
+        <!-- book search input & button end -->
+
+        <!-- single book detail start -->
+        <div id="single_container" class="mb-5 border-success mb-3 w-75 mx-auto" style="max-width: 18rem;">
+        </div>
+        <!-- single book detail end -->
+
+        <!-- search book details strat -->
+        <div id="search_container" class="row row-cols-1 row-cols-md-5 g-4">
+          </div>
+        <!-- search book details end -->
+    </div>
+    
+
+
+    <!-- Bootstrap js Link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js link -->
+    <script src="js/bookarchive.js"></script>
+</body>
+</html>
